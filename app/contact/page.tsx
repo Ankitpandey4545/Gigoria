@@ -1,4 +1,4 @@
-"use client";
+ "use client";
 
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -38,7 +38,6 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-blue-50/20 to-white pt-24 pb-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-        {/* Back Button */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -54,7 +53,6 @@ export default function ContactPage() {
           </Link>
         </motion.div>
 
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -78,9 +76,7 @@ export default function ContactPage() {
         </motion.div>
 
         <div className="grid lg:grid-cols-3 gap-8">
-          {/* Left Side - Contact Info */}
           <div className="lg:col-span-1 space-y-4">
-            {/* Company Info */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -100,7 +96,6 @@ export default function ContactPage() {
               </div>
             </motion.div>
 
-            {/* Address */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -128,7 +123,6 @@ export default function ContactPage() {
               </div>
             </motion.div>
 
-            {/* Mobile */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -148,7 +142,6 @@ export default function ContactPage() {
               </div>
             </motion.div>
 
-            {/* Email */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -168,7 +161,6 @@ export default function ContactPage() {
               </div>
             </motion.div>
 
-            {/* Registered Address */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -191,7 +183,6 @@ export default function ContactPage() {
             </motion.div>
           </div>
 
-          {/* Right Side - Contact Form */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -312,7 +303,6 @@ export default function ContactPage() {
           </motion.div>
         </div>
 
-        {/* Bottom Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

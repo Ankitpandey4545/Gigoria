@@ -1,4 +1,4 @@
-"use client";
+ "use client";
 
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -132,7 +132,6 @@ export default function TeamPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-blue-50/20 to-white pt-24 pb-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-        {/* Back Button */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -148,7 +147,6 @@ export default function TeamPage() {
           </Link>
         </motion.div>
 
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -171,7 +169,6 @@ export default function TeamPage() {
           </div>
         </motion.div>
 
-        {/* Stats */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -193,7 +190,6 @@ export default function TeamPage() {
           ))}
         </motion.div>
 
-        {/* Values Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -220,7 +216,6 @@ export default function TeamPage() {
           </div>
         </motion.div>
 
-        {/* Team Grid */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -236,7 +231,6 @@ export default function TeamPage() {
               whileHover={{ y: -8 }}
               className="group bg-white rounded-2xl p-6 border border-gray-200/60 shadow-lg shadow-gray-200/30 hover:shadow-2xl hover:shadow-blue-100/50 transition-all duration-300"
             >
-              {/* Avatar */}
               <div className="relative w-24 h-24 mx-auto mb-4">
                 <div className="w-24 h-24 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white text-3xl font-bold shadow-xl shadow-blue-600/30">
                   {member.name.split(' ').map(n => n[0]).join('')}
@@ -246,22 +240,18 @@ export default function TeamPage() {
                 </div>
               </div>
 
-              {/* Name */}
               <h3 className="text-xl font-extrabold text-gray-900 text-center">
                 {member.name}
               </h3>
               
-              {/* Designation */}
               <p className="text-sm font-semibold text-blue-600 text-center mb-2">
                 {member.designation}
               </p>
 
-              {/* Bio */}
               <p className="text-sm text-gray-600 text-center leading-relaxed mb-4">
                 {member.bio}
               </p>
 
-              {/* Contact Links */}
               <div className="flex items-center justify-center gap-3 pt-3 border-t border-gray-100">
                 <a
                   href={`mailto:${member.email}`}
@@ -289,7 +279,6 @@ export default function TeamPage() {
           ))}
         </motion.div>
 
-        {/* Bottom CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

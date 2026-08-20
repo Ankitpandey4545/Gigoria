@@ -75,7 +75,6 @@ export default function FAQPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-blue-50/20 to-white pt-24 pb-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-        {/* Back Button */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -91,7 +90,6 @@ export default function FAQPage() {
           </Link>
         </motion.div>
 
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -111,7 +109,6 @@ export default function FAQPage() {
           </div>
         </motion.div>
 
-        {/* Categories */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -131,7 +128,6 @@ export default function FAQPage() {
           ))}
         </motion.div>
 
-        {/* Search Bar */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -163,7 +159,6 @@ export default function FAQPage() {
           )}
         </motion.div>
 
-        {/* FAQ Accordion */}
         <div className="space-y-3">
           {filteredFaqs.length > 0 ? (
             filteredFaqs.map((faq, index) => (
@@ -239,7 +234,6 @@ export default function FAQPage() {
           )}
         </div>
 
-        {/* Still Have Questions */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
